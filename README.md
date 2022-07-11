@@ -1,5 +1,5 @@
 # mat-twitter-normalized-distance
-The visualization of Normalized social distance data from [mat-twitter-downloader](https://github.com/zabkwak/mat-twitter-downloader). It's based on shiny app.
+The visualization of Normalized social distance data from [mat-twitter-downloader](https://github.com/lvtffuk/mat-twitter-downloader). It's based on shiny app.
 
 ## Development
 ### Requirements
@@ -12,7 +12,7 @@ The visualization of Normalized social distance data from [mat-twitter-downloade
 
 ### Installation & test run
 ```bash
-git clone git@github.com:zabkwak/mat-twitter-normalized-distance.git
+git clone git@github.com:lvtffuk/mat-twitter-normalized-distance.git
 cd mat-twitter-normalized-distance
 Rscript -e "install.packages(c('shiny', 'shinythemes', 'rgl', 'psych', 'rjson', 'ca', 'nFactors', 'ape', 'wordcloud', 'qgraph', 'polycor', 'bipartite', 'FactoMineR', 'png', 'vegan3d', 'ade4', 'vegan', 'fpc', 'cluster', 'network', 'corrplot', 'smacof', 'e1071', 'mclust', 'MASS', 'ape', 'igraph', 'plotrix'))"
 Rscript main.R
@@ -26,9 +26,9 @@ Make sure all new packages are installed in `Dockerfile` with `RUN install2.r --
 No additional configuration is needed.
 
 ## Docker
-The [image](https://github.com/zabkwak/mat-twitter-normalized-distance/pkgs/container/mat-twitter-normalized-distance) is stored in GitHub packages registry and the app can be run in the docker environment.
+The [image](https://github.com/lvtffuk/mat-twitter-normalized-distance/pkgs/container/mat-twitter-normalized-distance) is stored in GitHub packages registry and the app can be run in the docker environment.
 ```bash
-docker pull ghcr.io/zabkwak/mat-twitter-normalized-distance:latest
+docker pull ghcr.io/lvtffuk/mat-twitter-normalized-distance:latest
 ```
 
 ```bash
@@ -37,7 +37,7 @@ docker run \
 -d \
 --restart=unless-stopped \
 --name=mat-twitter-normalized-distance \
-ghcr.io/zabkwak/mat-twitter-normalized-distance:latest  
+ghcr.io/lvtffuk/mat-twitter-normalized-distance:latest  
 ```
 The app will be accessible on `http://localhost:8080`.
 

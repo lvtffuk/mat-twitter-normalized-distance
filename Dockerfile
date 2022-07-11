@@ -37,7 +37,7 @@ RUN install2.r --error igraph
 RUN install2.r --error plotrix
 
 ENV PORT=8080
-LABEL org.opencontainers.image.source https://github.com/zabkwak/mat-twitter-normalized-distance
+LABEL org.opencontainers.image.source https://github.com/lvtffuk/mat-twitter-normalized-distance
 EXPOSE 8080
 
 CMD [ "Rscript", "main.R" ]
